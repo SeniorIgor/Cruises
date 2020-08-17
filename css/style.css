@@ -1,0 +1,497 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1170px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  color: #0d3351;
+  background: #f3f3f3 url("../img/bg.jpg") no-repeat top center;
+  background-size: 1673px 647px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.button-wrapper {
+  padding: 20px 10px 30px;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 50px;
+  color: #ffffff;
+  background-color: #33c7fd;
+  letter-spacing: 0.7px;
+  text-decoration: none;
+}
+
+.section-title {
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1.8px;
+}
+
+
+/* ------------------------- header ---------------------------- */
+
+.main-header-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px 0 5px;
+}
+
+.site-navigation {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: flex;
+  flex-wrap: wrap;
+  width: 555px;
+}
+
+.site-navigation-item {
+  margin-right: 35px;
+}
+
+.site-navigation-link {
+  color: #0d3351;
+  text-decoration: none;
+}
+
+.user-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 75px;
+  width: 350px;
+}
+
+.user-menu-item {
+  margin-right: 40px;
+}
+
+.user-menu-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.user-menu-link {
+  display: flex;
+  color: #0d3351;
+  text-decoration: none;
+}
+
+.user-menu-link:before {
+  content: "";
+  display: none;
+  width: 16px;
+  height: 20px;
+  margin-right: 8px;
+  margin-top: 1px;
+  transform: rotate(0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+
+.user-menu-link-account:before {
+  display: block;
+  background-image: url("../img/user.png");
+}
+
+.user-menu-link-currency:before {
+  display: block;
+  background-image: url("../img/rub.png");
+}
+
+.main-header-phone-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 auto;
+}
+
+.main-header-phone,
+  .main-footer-phone {
+  font-weight: 700;
+  color: #0d3351;
+  text-decoration: none;
+}
+
+.main-header-phone-desc,
+  .main-footer-phone-desc {
+  margin: 0;
+  font-size: 10px;
+}
+
+.main-header-logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main-title {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.main-title:before {
+  content: "";
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  margin-left: -38px;
+  width: 60px;
+  height: 280px;
+  background: url("../img/bg-dashline.png") no-repeat center;
+}
+
+.main-subtitle {
+  font-size: 100px;
+  line-height: 170px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+
+/* ------------------------- main ---------------------------- */
+
+/* --------- catalog ---------- */
+
+.catalog {
+  margin-top: 285px;
+  padding-bottom: 50px;
+}
+
+.catalog-sort {
+  margin: 5px 0 35px;
+  text-align: center;
+}
+
+.catalog-sort-option {
+  font-style: italic;
+}
+
+.catalog-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-right: -30px;
+  max-height: 980px;
+}
+
+.catalog-item {
+  position: relative;
+  margin-bottom: 20px;
+  width: 555px;
+  min-height: 304px;
+  background-color: #ffffff;
+}
+
+.catalog-item-big {
+  min-height: 628px;
+}
+
+.catalog-item:before {
+  display: none;
+
+  content: "хит продаж";
+  position: absolute;
+  top: -7px;
+  left: 420px;
+
+  padding-top: 25px; 
+  width: 90px;
+  height: 100px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  background: url("../img/hit.png") no-repeat top left;
+  text-transform: uppercase;
+}
+
+.catalog-item-hit:before {
+  display: block;
+  content: "хит продаж";
+  background-image: url("../img/hit.png");
+}
+
+.catalog-item-stock:before {
+  display: block;
+  content: "акция";
+  padding-top: 35px;
+  background-image: url("../img/stock.png");
+
+}
+
+.catalog-item-title {
+  margin: 15px 37px 8px;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.8px;
+  color: #00a2dd;
+}
+
+.catalog-item-img {
+  order: -1;
+}
+
+.catalog-item-link {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-item-properties {
+  margin: 0;
+}
+
+.catalog-item-property {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  font-weight: 700;
+  margin-left: 37px;
+}
+
+.catalog-item-property-desc {
+  margin: 0 0 0 10px;
+  font-weight: normal;
+}
+
+.catalog-item-price {
+  margin: 0;
+  margin-left: 37px;
+  margin-top: 7px;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-size: 30px;
+  line-height: 48px;
+  font-style: normal;
+  font-weight: normal;
+  color: #0d3351;
+  letter-spacing: 0.8px;
+}
+
+.catalog-item-prev-price {
+  margin: 0;
+  margin-left: 15px;
+  font-size: 18px;
+  line-height: 48px;
+  vertical-align: middle;
+  color: rgba(13, 51, 81, 0.55);
+}
+
+
+/* --------- gallery ---------- */
+
+.gallery {
+  padding-bottom: 70px;
+}
+
+.gallery-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.gallery-item {
+  display: flex;
+  flex-grow: 1;
+}
+
+.gallery-item-big {
+  flex-grow: 2;
+}
+
+.gallery-item-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* --------- comments ---------- */
+
+.comments-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.comments-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 360px;
+  background-color: #ffffff;
+}
+
+.comments-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.comments-item-blockquote {
+  padding: 25px 37px 60px;
+  margin: 0;
+}
+
+.comments-item-author {
+  margin: 0;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  color: #00a2dd;
+  letter-spacing: 0.08px;
+}
+
+.comments-item-cruise {
+  margin: 7px 0 10px;
+  color: rgba(13, 51, 81, 0.55);
+  letter-spacing: 0.7px;
+}
+
+.comments-item-text {
+  margin: 0;
+  letter-spacing: 0.7px;
+}
+
+
+/* ------------------------- footer ---------------------------- */
+
+.main-footer {
+  padding: 25px 0 30px;
+  margin-top: 30px;
+  background-color: #ffffff;
+}
+
+.main-footer-wrapper {
+  display: flex;
+}
+
+.main-footer-navigation {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-footer-navigation-link {
+  color: #0d3351;
+  text-decoration: none;
+}
+
+.social-wrapper {
+  margin-left: 145px;
+}
+
+.social-label {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.social-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 260px
+}
+
+.social-item {
+  display: flex;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0d3351;
+}
+
+.social-link {
+  width: 100%;
+  background-image: url('../img/vk.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-link-vk {
+  background-image: url('../img/vk.svg');
+  background-position: center left 7px;
+  background-size: 15px;
+}
+
+.social-link-ok {
+  background-image: url('../img/ok.svg');
+  background-size: 8px;
+}
+
+.social-link-youtube {
+  background-image: url('../img/youtube.svg');
+  background-position: top 7px center;
+  background-size: 12px;
+}
+
+.social-link-instagram {
+  background-image: url('../img/instagram.svg');
+  background-size: 12px;
+}
+
+.main-footer-column-wrapper {
+  margin-left: auto;
+}
+
+.copyright {
+  margin: 0;
+}
